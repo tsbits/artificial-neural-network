@@ -5,8 +5,8 @@ An attempt to make an artificial neural network from scratch in JS...
 
 # Knowage sources :book:
 ###### Texts
-["How to Build a Neural Network by Steven Miller"](https://stevenmiller888.github.io/mind-how-to-build-a-neural-network/)  
-["Neural network implementation in JavaScript, by an exemple" by François Andrieux](https://franpapers.com/en/2017-neural-network-implementation-in-javascript-by-an-example/)  
+["How to Build a Neural Network"](https://stevenmiller888.github.io/mind-how-to-build-a-neural-network/) by Steven Miller  
+["Neural network implementation in JavaScript, by an exemple"](https://franpapers.com/en/2017-neural-network-implementation-in-javascript-by-an-example/) by François Andrieux  
 ###### Video
-["Neural Networks (Part 1)" by macheads101](https://www.youtube.com/watch?v=P02xWy63Q6U)  
-["Neural Networks (Part 2)" by macheads101](https://www.youtube.com/watch?v=uHpKdZLutu0)
+["Neural Networks (Part 1)"](https://www.youtube.com/watch?v=P02xWy63Q6U) by macheads101  
+["Neural Networks (Part 2)"](https://www.youtube.com/watch?v=uHpKdZLutu0) by macheads101  
