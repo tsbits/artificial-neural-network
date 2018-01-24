@@ -17,9 +17,9 @@ An attempt to make an artificial neural network from scratch in JS...
 ["Comprendre le Deep Learning: Une introduction aux réseaux de neurones"](https://www.amazon.fr/gp/product/B01MSFLMFD/ref=oh_aui_detailpage_o01_s00?ie=UTF8&psc=1) by Jean-Claude Heudin :fr:
 
 # Recognized experts in the AI game :zap:
-[Yann LeCun](https://twitter.com/ylecun) • Twitter
-[Jean-Claude Heudin](https://twitter.com/jcheudin) • Twitter
-[Andrew Ng](https://twitter.com/AndrewYNg) • Twitter
-[Ray Kurzweil](https://twitter.com/kurzweilainews) • Twitter
-[Geoffrey Hinton](https://twitter.com/geoff_hinton) • Twitter
-[Nick Bostrom](https://nickbostrom.com/) • Personal website
+[Yann LeCun](https://twitter.com/ylecun) • Twitter  
+[Jean-Claude Heudin](https://twitter.com/jcheudin) • Twitter  
+[Andrew Ng](https://twitter.com/AndrewYNg) • Twitter  
+[Ray Kurzweil](https://twitter.com/kurzweilainews) • Twitter  
+[Geoffrey Hinton](https://twitter.com/geoff_hinton) • Twitter  
+[Nick Bostrom](https://nickbostrom.com/) • Personal website  
