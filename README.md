@@ -6,7 +6,7 @@ An attempt to make an artificial neural network from scratch in JS...
 # Code :computer:
 In the _code directory there is some...code that I wrote will learning stuff. The [_nnNodeStarter](_code/_nnNodeStarter) folder is a basic package I duplicate each time I start to code an exemple. It's juste a simple NodeJS program that run in the shell and allow me to test stuff. 
 
-All the folders in _code prefixed by "CLDL" are exemple I tryed to make from the book ["Comprendre le Deep Learning: Une introduction aux réseaux de neurones"](https://www.amazon.fr/gp/product/B01MSFLMFD/ref=oh_aui_detailpage_o01_s00?ie=UTF8&psc=1) by Jean-Claude Heudin :fr:
+All the folders in [_code](_code/) prefixed by "CLDL" are exemple I tryed to make from the book ["Comprendre le Deep Learning: Une introduction aux réseaux de neurones"](https://www.amazon.fr/gp/product/B01MSFLMFD/ref=oh_aui_detailpage_o01_s00?ie=UTF8&psc=1) by Jean-Claude Heudin :fr:
 
 # Knowage sources :book:
 ###### Text
