@@ -13,7 +13,7 @@ All the folders in [_code](_code/) prefixed by "CLDL" are exemple I tryed to mak
 ["How to Build a Neural Network"](https://stevenmiller888.github.io/mind-how-to-build-a-neural-network/) by Steven Miller  
 ["Neural network implementation in JavaScript, by an exemple"](https://franpapers.com/en/2017-neural-network-implementation-in-javascript-by-an-example/) by François Andrieux  
 ["Neural networks from scratch for Javascript linguists (Part1 — The Perceptron)"](https://hackernoon.com/neural-networks-from-scratch-for-javascript-linguists-part1-the-perceptron-632a4d1fbad2) by Elyx0  
-###### Video
+###### Videos
 ["Neural Networks (Part 1)"](https://www.youtube.com/watch?v=P02xWy63Q6U) by macheads101  
 ["Neural Networks (Part 2)"](https://www.youtube.com/watch?v=uHpKdZLutu0) by macheads101  
 ["Beginner Introduction to Neural Networks" playlist](https://www.youtube.com/playlist?list=PLxt59R_fWVzT9bDxA76AHm3ig0Gg9S3So) by giant_neural_network  
