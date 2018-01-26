@@ -1,4 +1,4 @@
-#CLDL 001
+# CLDL 001
 ## Euros to Dollars linear predictive converter
 
 This program :
