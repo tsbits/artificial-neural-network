@@ -2,6 +2,10 @@
 // VARIABLES //
 ///////////////
 
+// Get and order node process arg
+const argv = require('minimist')(process.argv.slice(2));
+console.dir(argv);
+
 // C -> Coef. of multiplication to find to get $ from €
 // NB: The good C is 1.24136 (according to Google convert tool the 25/01/18)
 var c = Math.random()*5000; 
@@ -53,7 +57,9 @@ function train( trials ){
 				}
 			}
 
-			console.log('Iteration #' + i + ' on item #' + j + ' : € -> ' + trainingDataSet[j][0] + ' • $ -> ' + trainingDataSet[j][1] + ' • Guessed $ -> ' + guessedDollars + ' • Error -> ' + calculatedError + ' • Current trainingC -> ' + trainingC);
+			if( !argv.quiet ){
+				console.log('Iteration #' + i + ' on item #' + j + ' : € -> ' + trainingDataSet[j][0] + ' • $ -> ' + trainingDataSet[j][1] + ' • Guessed $ -> ' + guessedDollars + ' • Error -> ' + calculatedError + ' • Current trainingC -> ' + trainingC);
+			}
 		}
 
 
@@ -88,8 +94,6 @@ console.log('- - - - - - - - - - - - - -');
 var t = train(10000);
 console.log('- - - - - - - - - - - - - -');
 console.log('BestC -> ' + t + ' • Randomely selected convertion rate to generate the set : ' + c);
-
-
 
 
 
