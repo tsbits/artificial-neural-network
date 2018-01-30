@@ -6,10 +6,9 @@
 const argv = require('minimist')(process.argv.slice(2));
 console.dir(argv);
 
-// C -> Coef. of multiplication to find to get $ from €
-// NB: The good C is 1.24136 (according to Google convert tool the 25/01/18)
-var c = Math.random()*5000; 
-// A set of validated data to train the "neuron" ?...
+// A -> An average value that defines separations between Giraph and Elephant
+var A = 0.25; // Parameter of the classifyer 
+var lrate = 0.3; // Value used to temperate the correction we apply after having found the error
 var trainingDataSet = [
 	{
 		"weight": 3,
@@ -62,38 +61,32 @@ function generateTrainingDataSet( dataSetLength ){
 
 // Iterate through the trainingDataSet "trials" time, trying to find the best C to get $ from €
 function train( trials ){
- 	// Giving a random value to C to start the training
-	var trainingC = 15;
-	var bestErrorRatio = 1000000;
-	var ajustStep = 0.1;
+ 	// Giving a random value to A to start the training
+	var trainingA = 0.25;
+	var trainingDA; // The proportion of A to take care when updating A
+	var trainingLearningRate = 0.3;
 
 	for( var i = 0; i < trials; i++ ){
 		for( var j = 0; j < trainingDataSet.length; j++ ){
-			var guessedDollars = trainingDataSet[j][0] * trainingC;
-			var calculatedError = guessedDollars - trainingDataSet[j][1];
-			var errorRatio = guessedDollars / trainingDataSet[j][1];
+			var cAnimal = trainingDataSet[j];
+			// x weight • y neck length
+			var y = trainingA * cAnimal.weight // y = Ax
+			var z = cAnimal.neck; // The good y
+			var e = z - y;// e = z - y 
 
-			if( Math.abs(errorRatio) < bestErrorRatio ){
-				bestErrorRatio = Math.abs(errorRatio);
-			}
-			else{
-				if( calculatedError < 0 ){
-					trainingC += ajustStep * errorRatio;
-				}
-				else{
-					trainingC -= ajustStep * errorRatio;
-				}
-			}
+			trainingDA = trainingLearningRate * e / cAnimal.weight;
+			trainingA += trainingDA; 
 
+			
 			if( !argv.quiet ){
-				console.log('Iteration #' + i + ' on item #' + j + ' : € -> ' + trainingDataSet[j][0] + ' • $ -> ' + trainingDataSet[j][1] + ' • Guessed $ -> ' + guessedDollars + ' • Error -> ' + calculatedError + ' • Current trainingC -> ' + trainingC);
+				console.log('Iteration #' + i + ' on item #' + j + ' : type -> ' + trainingDataSet[j]['type'] + ' • weight -> ' + trainingDataSet[j]['weight'] + ' • neck : ' + trainingDataSet[j]['neck'] + ' • Error -> ' + e + ' • Current trainingA -> ' + trainingA);
 			}
 		}
 
 
 	}
 
-	return trainingC;
+	return trainingA;
 }
 
 function predict(){
@@ -106,7 +99,7 @@ function predict(){
 // PROGRAM //
 /////////////
 
-console.log('€ to $ converter : started');
+console.log('Elephant or Giraph linear classifyer : started');
 console.log('- - - - - - - - - - - - - -');
 console.log('Training data set generation : started');
 console.log('- - - - - - - - - - - - - -');
@@ -117,13 +110,12 @@ console.log('- - - - - - - - - - - - - -');
 console.log('Datas :');
 console.log( JSON.stringify(trainingDataSet) );
 console.log( trainingDataSet.length );
-/*
 console.log('- - - - - - - - - - - - - -');
 console.log('Starting the training');
 console.log('- - - - - - - - - - - - - -');
 var t = train(10000);
 console.log('- - - - - - - - - - - - - -');
-console.log('BestC -> ' + t + ' • Randomely selected convertion rate to generate the set : ' + c);*/
+console.log('BestA -> ' + t);
 
 
 

@@ -19,7 +19,8 @@ All the folders in [_code](_code/) prefixed by "CLDL" are exemple I tryed to mak
 ["Beginner Introduction to Neural Networks" playlist](https://www.youtube.com/playlist?list=PLxt59R_fWVzT9bDxA76AHm3ig0Gg9S3So) by giant_neural_network  
 ###### Book
 ["Make Your Own Neural Network: An In-depth Visual Introduction For Beginners"](https://www.amazon.com/Make-Your-Neural-Network-depth/dp/1549869132/ref=sr_1_1?ie=UTF8&qid=1516793459&sr=8-1&keywords=Make+Your+Own+Neural+Network%3A+An+In-depth+Visual+Introduction+For+Beginners) by Taylor, Michael  
-["Comprendre le Deep Learning: Une introduction aux réseaux de neurones"](https://www.amazon.fr/gp/product/B01MSFLMFD/ref=oh_aui_detailpage_o01_s00?ie=UTF8&psc=1) by Jean-Claude Heudin :fr:
+["Comprendre le Deep Learning: Une introduction aux réseaux de neurones"](https://www.amazon.fr/gp/product/B01MSFLMFD/ref=oh_aui_detailpage_o01_s00?ie=UTF8&psc=1) by Jean-Claude Heudin :fr:  
+["Neural Networks and Deep Learning"](http://neuralnetworksanddeeplearning.com/) by Michael Nielsen  
 
 # Recognized experts in the AI game :zap:
 [Yann LeCun](https://twitter.com/ylecun) • Twitter  
